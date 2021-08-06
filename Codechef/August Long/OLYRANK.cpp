@@ -13,7 +13,9 @@ int main()
     {
         ll g1, s1, b1, g2, s2, b2;
         cin >> g1 >> s1 >> b1 >> g2 >> s2 >> b2;
-        if (g1 + s1 + b1 > g2 + s2 + b2)
+        ll sum1 = g1 + s1 + b1;
+        ll sum2 = g2 + s2 + b2;
+        if (sum1 > sum2)
             cout << 1 << endl;
         else
             cout << 2 << endl;
