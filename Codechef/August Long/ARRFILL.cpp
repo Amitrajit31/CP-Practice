@@ -74,7 +74,7 @@ int main()
 
         ll lcm = 1;
         ll rem = n;
-        ll res = 0;
+        ll ans = 0;
 
         vector<pair<int, int>>::iterator itr;
 
@@ -82,11 +82,11 @@ int main()
         {
             ll a = itr->first, b = itr->second;
             lcm = lcm * b / __gcd(lcm, b);
-            res += (rem - n / lcm) * a;
+            ans += (rem - n / lcm) * a;
             rem = n / lcm;
         }
 
-        cout << res << endl;
+        cout << ans << endl;
     }
     return 0;
 }
